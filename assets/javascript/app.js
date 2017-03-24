@@ -26,7 +26,7 @@ $(".startButton").on("click", function(event) {
     if($("#exampleInputName2").val().length < 5 ) {
 
         $("#exampleInputName2").popover('show');
-        return false;
+        e.preventDefault();
      };
 
     if($('#exampleInputName2').val().length >= 5) {
