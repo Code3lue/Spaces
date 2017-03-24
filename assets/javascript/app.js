@@ -23,43 +23,31 @@ $(".startButton").on("click", function(event) {
 
     event.preventDefault();
 
-     var input = $("#exampleInputName2").val().trim();
-     var user = $(".user");
-    
-
     if($("#exampleInputName2").val().length < 5 ) {
 
         $("#exampleInputName2").popover('show');
-        setTimeout(function () {
-        $("#exampleInputName2").popover('hide');
-    }, 2000);
-     }
+     };
 
     if($('#exampleInputName2').val().length >= 5) {
 
-      
-
-          $('#myModal').modal('hide');
-             
-    }
-
-    localStorage.setItem('username', input);
-
-       var retrievedObject = localStorage.getItem('username');
-
-       
-
-       window.location = ($(".selected").parent().attr('href'));
-
-
+      window.location.replace($(".selected").parent().attr('href'));
 
                  return false;
 
+             $('#myModal').modal('hide');
+        
+};
+        
+
+     var input = $("#exampleInputName2").val().trim();
+     var user = $(".user");
+
+     user.html(input);
+
+    
+
+
 });
-
-
-
-
 
 
 function initMap() {
