@@ -23,13 +23,18 @@ $(".startButton").on("click", function(event) {
 
     event.preventDefault();
 
+
     if($("#exampleInputName2").val().length < 5 ) {
 
         $("#exampleInputName2").popover('show');
-        event.stopPropagation();
+       
      };
 
     if($('#exampleInputName2').val().length >= 5) {
+
+      var input = $("#exampleInputName2").val().trim();
+
+      localStorage.setItem("username", JSON.stringify(input));
 
       window.location.replace($(".selected").parent().attr('href'));
 
@@ -40,15 +45,23 @@ $(".startButton").on("click", function(event) {
 };
         
 
-     var input = $("#exampleInputName2").val().trim();
+    /* var input = $("#exampleInputName2").val().trim();
      var user = $(".user");
 
-     user.html(input);
-
-    
+     user.html(input);*/
 
 
+  
 });
+
+var retrievedObj = localStorage.getItem('username');
+
+//console.log('username: ', JSON.parse(retrievedObj));
+
+var user = $('#userName')
+
+user.html(retrievedObj);
+
 
 
 function initMap() {
