@@ -12,16 +12,41 @@ $(document).ready(function() {
 });
 
 $('.btTxt').click(function(e) {
-     $('.selected').removeClass('selected'); // removes the previous selected class
-   $(this).addClass('selected'); // adds the class to the clicked image
+     $('.selected').removeClass('selected');
+
+     // removes the previous selected class
+   $(this).addClass('selected');
+  // $(this).unbind('data-clicked', click);
+  // $(this).attr('data-clicked', 'yes') // adds the class to the clicked image
+
 
 });
+/*
+$('images').click(function(e) {
+  $(this).removeAttr('data-clicked');
+  $(this).attr('data-clicked', 'yes');
+});*/
+
+
+
 
 
 
 $(".startButton").on("click", function(event) {
 
     event.preventDefault();
+
+   
+  
+ /*var isClicked = $('').data('clicked');
+
+    if(isClicked == 'yes') {
+
+      console.log("this is clicked");
+
+      else {
+        console.log("nothing clicked");
+      };*/
 
 
     if($("#exampleInputName2").val().length < 5 ) {
@@ -42,7 +67,10 @@ $(".startButton").on("click", function(event) {
 
              $('#myModal').modal('hide');
         
+
 };
+
+
         
 
     /* var input = $("#exampleInputName2").val().trim();
