@@ -1,0 +1,14 @@
+Spaces
+
+
+Description-
+social platform to allow users of similar interests to highlight places on the map. These places are crowdsourced and saved on a database for other users to engage and encounter (e.g. if users are interested in social events around the area, they could pull up the app and find nearby markers that other users have tagged). The app also has a built-in crime watch api in order to identify those not-so-safe spaces.
+
+ 
+Motivation-
+
+gives users of similar interest a way to mark places not typically known about an area. whether it is coffee shop hours, wifi availability, actually amount of space provided. It allows the user to intuitively pick a certain place of the other. updates are real-time and certain spaces maybe unfavorable (i.e coffee shop is too full or too loud right now, heres another place)
+
+Results-
+
+The user is able to contribute to what's going on in their community. Crime watch allows users to also mark areas hostile activity. Users can let others know of certain events in the area.

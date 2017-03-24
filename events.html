@@ -4,88 +4,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Spacely</title>
+    <title>Spaces</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Poiret+One|Raleway|Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRVi4Uhx1M_P8Hp4Hm5qAMDVo1wSxdcKw&callback=initMap" async defer></script>
     <!--logo-->
 </head>
 
 <body>
-
-    
-    <div class="container-fluid logo">
-        <img src="assets/images/study1.jpg" class="">
-        <div class="username">
-            <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">JetCyclops</a></p>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row col-lg-6 chat">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Spacely - Events</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Spaces <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Events</a></li>
-                                    <li><a href="#">Study Spaces</a></li>
-                                    <li><a href="#">Meditation Spaces</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Account</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form navbar-right">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
-            <div class="row col-lg-7 liveFeed">
-                Live Feed/CHAT .... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend ultricies lorem ut condimentum. Donec luctus blandit rutrum. Donec sapien felis, fermentum mattis scelerisque cursus, viverra vel eros. Sed venenatis metus dignissim ex tincidunt, a ornare velit tempor. Mauris eu ex nisl. Pellentesque nec libero sed nisi condimentum bibendum. Nulla mi tellus, efficitur ut leo vel, interdum bibendum arcu. Donec</div>
-        </div>
-        <div class="row col-lg-5 map">
-            <img src="map.gif">
-        </div>
-        <div class="row col-lg-6">
-            <div class="actions">
-                <button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Check in!
-                </button>
-                <button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Crime Layer
-                </button>
+    <div class="jumbotron">
+        <div class="logo">
+            <img src="assets/images/logo.svg" id="logo">
+            <div class="welcome">Somewhere to connect... </div>
+            <div class="username">
+                <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link" id="userName">JetCyclops</a></p>
             </div>
         </div>
     </div>
-    <div class="row footer">
-            <footer>
-                <p>JetCyclops 2017</p>
-            </footer>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Define Your Space Today... </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore Spaces <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="study.html">Study Spaces</a></li>
+                            <li><a href="meditation.html">Meditation Spaces</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Account</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href=" jetcyclops@gmail.com">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row col-md-3 chat">
+            <a class="twitter-timeline"  href="https://twitter.com/hashtag/eventspaces" data-widget-id="844698495445602304">#eventspaces Tweets</a>
+            <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+            </script>
+        </div>
+        <div class="row col-md-4 map" id="map">
+        </div>
+    </div>
+    <div class="row col-lg-12">
+        <div class="actions">
+            <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Check in!
+            </button>
+            <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Crime Layer
+            </button>
+        </div>
+    </div>
+    <div class="row footer">
+        <footer>
+            <p>JetCyclops 2017</p>
+        </footer>
+    </div>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
+</html>
