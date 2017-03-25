@@ -15,6 +15,22 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRVi4Uhx1M_P8Hp4Hm5qAMDVo1wSxdcKw&callback=initMap" async defer></script>
     <!--logo-->
 </head>
+            <!-- Check-In Modal -->
+    <div class="modal fade" id="check" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-xl" role="document">
+           <div class="modal-content">
+               <div class="modal-header my-object">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title" id="checkInModal">Check In!</h4>
+               </div>
+               <div class="modal-body">
+                   <h3>Comment!</h3>
+                   <textarea class="form-control" id="comment" rows="3"></textarea>
+                   <button type="submit" class="btn btn-default btn-lg" id="checkButton">Go!</button>
+                </div>
+          </div>
+        </div>
+    </div>
 
 <body>
     <div class="jumbotron">
@@ -99,6 +115,7 @@
             <p>JetCyclops 2017</p>
         </footer>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRVi4Uhx1M_P8Hp4Hm5qAMDVo1wSxdcKw&callback=initMap" async defer></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
